@@ -1,15 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("John", "Doe", "Male");
-        Person p2 = new Person("John", "Doe", "Male");
+        int[] numbers = {1, 2, 3, 4, 5};
 
-        System.out.println(p1);
-        System.out.println(p1.equals(p2));
-
-        Teacher t1 = new Teacher("Jane", "Smith", "Female", "CS", new String[]{"Java", "Python"});
-        Teacher t2 = new Teacher("Jane", "Smith", "Female", "CS", new String[]{"Java", "Python"});
-
-        System.out.println(t1);
-        System.out.println(t1.equals(t2));
+        System.out.println("Min: " + MathDemo.min(3, 7));
+        System.out.println("Max: " + MathDemo.max(3, 7));
+        System.out.println("Sum: " + MathDemo.sum(numbers));
+        System.out.println("Mean: " + MathDemo.mean(numbers));
+        System.out.println("Factorial: " + MathDemo.factorial(5));
     }
 }
